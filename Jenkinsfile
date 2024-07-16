@@ -8,8 +8,8 @@ pipeline {
         IMAGE_NAME = "1.0-${BUILD_NUMBER}"
         CLUSTER_NAME = "demo-cluster"
         CLUSTER_REGION = "us-east-1"
-        AWS_ACCESS_KEY_ID = credentials('aws_secret_access_key_id')
-        AWS_SECRET_ACCESS_KEY = credentials('aws_secret_access_key')
+        AWS_ACCESS_KEY_ID = credentials('aws-secret-access-key-id')
+        AWS_SECRET_ACCESS_KEY = credentials('aws-secret-access-key')
     }
     stages {
         stage('build app') {
