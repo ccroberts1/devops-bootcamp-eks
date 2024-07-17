@@ -16,7 +16,7 @@ pipeline {
             steps {
                script {
                    echo "building the application..."
-                   sh 'gradle clean build'
+                   sh './gradlew clean build'
                }
             }
         }
