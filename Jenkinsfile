@@ -18,7 +18,7 @@ pipeline {
                    echo "building the application..."
                    sh 'pwd'
                    sh 'ls'
-                   sh './gradlew clean build'
+                   sh 'sudo ./gradlew clean build'
                }
             }
         }
