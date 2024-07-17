@@ -16,7 +16,8 @@ pipeline {
             steps {
                script {
                    echo "building the application..."
-                   sh 'gradle wrapper'
+                   sh 'pwd'
+                   sh 'ls'
                    sh './gradlew clean build'
                }
             }
