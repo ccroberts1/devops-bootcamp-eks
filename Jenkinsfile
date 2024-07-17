@@ -16,8 +16,6 @@ pipeline {
             steps {
                script {
                    echo "building the application..."
-                   sh 'pwd'
-                   sh 'ls'
                    sh 'chmod +x gradlew'
                    sh './gradlew clean build'
                }
